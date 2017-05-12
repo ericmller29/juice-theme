@@ -76,14 +76,14 @@ end
 
 <h2>Just a plain old image</h2>
 
-<img src="/assets/img/stock/stock_blog_photo_1.jpg">
+<img src="{{ '/assets/img/stock/stock_blog_photo_1.jpg' | relative_url }}">
 
 <hr>
 
 <h2>A figure image with a caption</h2>
 
 <figure>
-    <img src="/assets/img/stock/stock_blog_photo_4.jpg" />
+    <img src="{{ '/assets/img/stock/stock_blog_photo_4.jpg' | relative_url }}" />
     <figcaption>I'm a fun image caption!</figcaption>
 </figure>
 
