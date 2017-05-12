@@ -17,8 +17,8 @@ title: Juice
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Juice. The minimal Jekyll theme.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/juice" # the subpath of your site, e.g. /blog
+url: "https://themes.eastoh.co/juice/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 codepen_username: jekyll
