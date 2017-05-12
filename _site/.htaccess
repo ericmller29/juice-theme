@@ -1,7 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{THE_REQUEST} ^(?:GET|POST)\ /+(.+?/?)_site/([^\?\ ]*)
-RewriteRule ^ /%1%2 [L,R]
-
-RewriteCond $1 !^_site
-RewriteRule ^(.*)$ _site/$1 [L]
