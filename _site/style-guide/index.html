@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style Guide | Juice</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Poppins:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+	
+<nav class="main-nav text-center" role="navigation" artia-label="Main navigation">
+	<label for="togglr" class="togglr">
+		Menu <i class="fa fa-bars"></i>
+	</label>
+	<input type="checkbox" id="togglr" name="togglr" aria-label="Navigation toggle">
+
+	<div class="nav-items">
+		<a href="/" role="link" aria-label="Homepage">Home</a>
+		<a href="/about" role="link" aria-label="About Me">About Me</a>
+		<a href="/style-guide" class="active" role="link" aria-label="About Me">Style Guide</a>
+		<a href="#" role="link" aria-label="Contact Me">Contact Me</a>
+		<div class="search">
+			<label for="search" class="hidden">Search</label>
+			<input type="text" name="search" id="search" placeholder="Search...">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</div>
+</nav>
+<header class="header" role="banner">
+	<div class="container">
+		<div class="site-title">
+			<a href="/" role="link" aria-label="Homepage">Juice</a>
+		</div>
+		<p class="site-tagline">Juice. The minimal Jekyll theme.
+</p>
+	</div>
+</header>
+
+	<main role="main">
+		<div class="container level">
+			
+			<div class="featured-image">
+				<span style="background-image: url(/assets/img/stock/stock_blog_photo_3.jpg);"></span>
+				<h1 class="page-title">Style Guide</h1>
+			</div>
+			
+			<p>My fellow <a href="http://eastoh.co" target="_blank">Earthicans</a>, as I have explained in my book "<a href="http://eastoh.co" target="_blank">Earth in the Balance</a>", and the much more popular "Harry Potter and the Balance of Earth", we need to defend our planet against pollution. Also dark wizards. We don't have a brig.</p>
+<p>Tell them I hate them. <strong> Tell her she looks thin.</strong> <em> Who's brave enough to fly into something we all keep calling a death sphere?</em> Yeah, I do that with my stupidness.</p>
+
+<hr />
+
+<h1>This is the style for heading 1</h1>
+<h2>This is the style for heading 2</h2>
+<h3>This is the style for heading 3</h3>
+<h4>This is the style for heading 4</h4>
+<h5>This is the style for heading 5</h5>
+<h6>This is the style for heading 6</h6>
+
+<hr />
+
+<ul>
+	<li>This is the worst part. The calm before the battle. Your best is an idiot! Yes, except the Dave Matthews Band doesn't rock. I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money.</li>
+	<li>Well, let's just dump it in the sewer and say we delivered it.</li><li>Oh, how I wish I could believe or understand that! There's only one reasonable course of action now: kill Flexo!</li>
+	<li>Ok, we'll go deliver this crate like professionals, and then we'll go ride the bumper cars.</li>
+</ul>
+
+<hr />
+
+<ol>
+	<li>This is the worst part. The calm before the battle. Your best is an idiot! Yes, except the Dave Matthews Band doesn't rock. I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money.</li>
+	<li>Well, let's just dump it in the sewer and say we delivered it.</li><li>Oh, how I wish I could believe or understand that! There's only one reasonable course of action now: kill Flexo!</li>
+	<li>Ok, we'll go deliver this crate like professionals, and then we'll go ride the bumper cars.</li>
+</ol>
+
+<hr />
+
+<blockquote>Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. Fry! Stay back! He's too powerful! I don't want to be rescued.</blockquote>
+
+<hr />
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<hr />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOa59_yt1uY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314672405&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+<hr />
+
+<p data-height="499" data-theme-id="0" data-slug-hash="ZKxvWE" data-default-tab="css,result" data-user="thesupersloth" data-embed-version="2" data-pen-title="Pure CSS iPhone" class="codepen">See the Pen <a href="http://codepen.io/thesupersloth/pen/ZKxvWE/">Pure CSS iPhone</a> by Emily Goldfein (<a href="http://codepen.io/thesupersloth">@thesupersloth</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<hr />
+
+<h2>Just a plain old image</h2>
+
+<p><img src="/assets/img/stock/stock_blog_photo_1.jpg" /></p>
+
+<hr />
+
+<h2>A figure image with a caption</h2>
+
+<figure>
+    <img src="/assets/img/stock/stock_blog_photo_4.jpg" />
+    <figcaption>I'm a fun image caption!</figcaption>
+</figure>
+
+<hr />
+
+<h2>Here are some form elements</h2>
+
+<div class="form-input">
+	<label for="text-field">Text Field Label:</label>
+	<input type="text" name="text-field" id="text-field" />
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-field"</span><span class="nt">&gt;</span>Text Field Label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"text-field"</span> <span class="na">id=</span><span class="s">"text-field"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<div class="form-input">
+	<label for="text-area">Text Area Label:</label>
+	<textarea name="text-area" id="text-area"></textarea>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-area"</span><span class="nt">&gt;</span>Text Area Label:<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"text-area"</span> <span class="na">id=</span><span class="s">"text-area"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3>Radio Buttons</h3>
+<p>How fun right?</p>
+<div class="form-input">
+	<input id="radio-1" name="radio" type="radio" checked="" />
+	<label for="radio-1" class="radio-label">Checked</label>
+</div>
+<div class="form-input">
+	<input id="radio-2" name="radio" type="radio" />
+	<label for="radio-2" class="radio-label">Unchecked</label>
+</div>
+<div class="form-input">
+	<input id="radio-3" name="radio" type="radio" disabled="disabled" />
+	<label for="radio-3" class="radio-label">Disabled</label>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-1"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-1"</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nt">&gt;</span>Checked<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-2"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-2"</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nt">&gt;</span>Unchecked<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-3"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-3"</span> <span class="na">class=</span><span class="s">"radio-label"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3>Checkboxes</h3>
+
+<div class="form-input">
+	<input id="checkbox-1" name="checkbox-1" type="checkbox" />
+	<label for="checkbox-1">Checkbox unchecked</label>
+</div>
+<div class="form-input">
+	<input id="checkbox-2" name="checkbox-2" type="checkbox" checked="" />
+	<label for="checkbox-2">Checkbox checked</label>
+</div>
+<div class="form-input">
+	<input id="checkbox-3" name="checkbox-3" type="checkbox" disabled="" />
+	<label for="checkbox-3">Checkbox disabled</label>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkbox-1"</span> <span class="na">name=</span><span class="s">"checkbox-1"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox-1"</span><span class="nt">&gt;</span>Checkbox unchecked<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkbox-2"</span> <span class="na">name=</span><span class="s">"checkbox-2"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox-2"</span><span class="nt">&gt;</span>Checkbox checked<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkbox-3"</span> <span class="na">name=</span><span class="s">"checkbox-3"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox-3"</span><span class="nt">&gt;</span>Checkbox disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<h3>Selectbox!</h3>
+
+<div class="form-input margin-bottom">
+	<label for="selectbox-active">Selectbox Active: </label>
+	<div class="select">
+		<select name="selectbox-active" id="selectbox-active">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+			<option value="4">Option 4</option>
+			<option value="5">Option 5</option>
+			<option value="6">Option 6</option>
+		</select>
+		<i class="fa fa-caret-down"></i>
+	</div>
+</div>
+<div class="form-input">
+	<label for="selectbox-disabled">Selectbox Disabled: </label>
+	<div class="select">
+		<select name="selectbox-disabled" id="selectbox-disabled" disabled="">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+			<option value="4">Option 4</option>
+			<option value="5">Option 5</option>
+			<option value="6">Option 6</option>
+		</select>
+		<i class="fa fa-caret-down"></i>
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input margin-bottom"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"selectbox-active"</span><span class="nt">&gt;</span>Selectbox Active: <span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"selectbox-active"</span> <span class="na">id=</span><span class="s">"selectbox-active"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"4"</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"5"</span><span class="nt">&gt;</span>Option 5<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"6"</span><span class="nt">&gt;</span>Option 6<span class="nt">&lt;/option&gt;</span>
+		<span class="nt">&lt;/select&gt;</span>
+		<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down"</span><span class="nt">&gt;&lt;/i&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-input"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"selectbox-disabled"</span><span class="nt">&gt;</span>Selectbox Disabled: <span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"selectbox-disabled"</span> <span class="na">id=</span><span class="s">"selectbox-disabled"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"4"</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"5"</span><span class="nt">&gt;</span>Option 5<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"6"</span><span class="nt">&gt;</span>Option 6<span class="nt">&lt;/option&gt;</span>
+		<span class="nt">&lt;/select&gt;</span>
+		<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-caret-down"</span><span class="nt">&gt;&lt;/i&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<hr />
+
+<h2>Buttons!</h2>
+
+<p><button type="submit" class="btn">
+	Button
+	<i class="fa fa-thumbs-up"></i>
+</button></p>
+
+<p><button type="submit" class="btn icon-left">
+	<i class="fa fa-thumbs-up"></i>
+	Button Icon Left
+</button></p>
+
+<p><button type="submit" class="btn no-icon">
+	Button No Icon
+</button></p>
+
+<p><button type="submit" class="btn big">
+	Button Big
+	<i class="fa fa-thumbs-up"></i>
+</button></p>
+
+<p><button type="submit" class="btn big icon-left">
+	Button Big Icon Left
+	<i class="fa fa-thumbs-up"></i>
+</button></p>
+
+<p><button type="submit" class="btn big no-icon">
+	Button Big No Icon
+</button></p>
+
+<p><button type="submit" class="btn full">
+	Button Full Width
+</button></p>
+
+<p><button type="submit" class="btn big full">
+	Button Full Width
+</button></p>
+
+			<div class="separator margin-bottom"></div>
+		</div>
+	</main>
+
+	<footer class="footer text-center" role="contentinfo">
+	<div class="container">
+		<nav class="social-icons" role="navigation" aria-label="Social icons">
+			<a href="https://twitter.com/jekyllrb" target="_blank" rel="link" aria-label="Follow Juice on twitter!" alt="Follow Juice on twitter!"><i class="fa fa-twitter"></i></a>
+			<a href="https://github.com/jekyll" target="_blank" rel="link" aria-label="Find Juice on GitHub!" alt="Find Juice on GitHub!"><i class="fa fa-github"></i></a>
+			<a href="https://codepen.io/jekyll" target="_blank" rel="link" aria-label="Find Juice on CodePen!" alt="Find Juice on CodePen!"><i class="fa fa-codepen"></i></a>
+		</nav>
+		<h6>&copy; Juice Theme 2017. All rights reserved.</h6>
+	</div>
+</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="/assets/js/vendor.min.js"></script>
+	<script type="text/javascript" src="/assets/js/site.js"></script>
+	
+</body>
+</html>
