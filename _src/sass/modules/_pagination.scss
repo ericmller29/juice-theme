@@ -1,0 +1,26 @@
+.pagination{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	a{
+		padding: 5px 10px;
+	}
+
+	@include bp(medium){
+		padding: 0 20px;
+	}
+
+	.numbers{
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		span{
+			color: $main-color;
+			font-weight: bold;
+		}
+	}
+}

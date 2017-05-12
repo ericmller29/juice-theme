@@ -1,0 +1,38 @@
+.featured-image{
+	width: 100%;
+	position: relative;
+	margin-bottom: 40px;
+
+	.page-title{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		line-height: normal;
+		font-size: 3em;
+		background: rgba($main-color, 0.9);
+		padding: 10px 40px;
+	}
+
+	span{
+		display: block;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+
+		&:after{
+			padding-bottom: 50%;
+			content: '';
+			display: block;
+			outline: 2px solid rgba(#fff, 0.3);
+			outline-offset: -10px;
+			position: relative;
+			z-index: 10;
+
+			@include bp(small){
+				padding-bottom: 80%;
+			}
+		}
+	}
+}

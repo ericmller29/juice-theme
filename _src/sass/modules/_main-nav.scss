@@ -1,0 +1,79 @@
+.main-nav{
+	padding: 10px;
+	background: $black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+
+	a{
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		transition: color 0.2s;
+		margin-left: 20px;
+		vertical-align: middle;
+		line-height: normal;
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		&:hover, &.active{
+			color: $main-color;
+		}
+	}
+
+	@include bp(small){
+		.nav-items{
+			display: none;
+			text-align: left;
+			padding-top: 10px;
+
+			a, .search {
+				display: block;
+				width: 100%;
+				padding: 10px;
+				margin-left: 0;
+				border-top: solid 1px #ccc;
+
+				button{
+					right: 15px;
+				}
+			}
+		}
+	}
+
+	.search{
+		display: inline-block;
+		position: relative;
+		margin-left: 20px;
+		vertical-align: middle;
+
+		input{
+			border: none;
+			border-radius: 0;
+			padding: 5px 10px;
+			font-size: 0.8em;
+			padding-right: 30px;
+
+			@include bp(small){
+				display: block;
+				width: 100%;
+			}
+		}
+
+		button{
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			background: transparent;
+			color: $black;
+			border: none;
+			transform: translateY(-50%);
+			cursor: pointer;
+			font-size: 0.8em;
+		}
+	}
+}

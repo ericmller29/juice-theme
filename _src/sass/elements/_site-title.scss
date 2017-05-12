@@ -1,0 +1,45 @@
+.site-title{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 3em;
+
+	a{
+		display: inline-block;
+		padding: 10px 15px;
+		border: solid 4px $main-color;
+		color: $main-color;
+		text-decoration: none;
+		line-height: 1;
+		position: relative;
+		z-index: 1;
+		transition: color 0.2s;
+		font-family: $header-font;
+		font-weight: bold;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			background: $main-color;
+			top: 50%;
+			left: 50%;
+			right: 50%;
+			bottom: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			transition: all 0.1s;
+		}
+
+		&:hover{
+			color: #fff;
+
+			&:after{
+				top: 4px;
+				left: 4px;
+				right: 4px;
+				bottom: 4px;
+				transform: none;
+			}
+		}
+	}
+}

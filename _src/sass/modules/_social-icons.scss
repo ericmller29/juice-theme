@@ -1,0 +1,28 @@
+.social-icons{
+	margin-bottom: 20px;
+
+	&:after{
+		display: block;
+		content: '';
+		width: 60%;
+		margin: 10px auto 0;
+		height: 1px;
+		background: rgba(#fff, 0.2);
+	}
+
+	a{
+		color: #fff;
+		display: inline-block;
+		font-size: 1.5em;
+		margin-left: 15px;
+		transition: color 0.2s;
+
+		&:hover{
+			color: $main-color;
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}

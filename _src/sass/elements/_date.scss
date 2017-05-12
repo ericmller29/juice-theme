@@ -1,0 +1,25 @@
+.date{
+	display: inline-block;
+	background: $main-color;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	position: relative;
+	margin-top: 0;
+	padding-top: 3px;
+	color: #fff;
+	z-index: 1;
+	font-size: 0.8em;
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -20px;
+	    height: 100%;
+	    width: 40px;
+	    background: $main-color;
+	    transform: skewX(-50deg);
+	    z-index: -1;
+	}
+}

@@ -1,0 +1,27 @@
+{% assign current = page.url | downcase | split: '/' %}
+<nav class="main-nav text-center" role="navigation" artia-label="Main navigation">
+	<label for="togglr" class="togglr">
+		Menu <i class="fa fa-bars"></i>
+	</label>
+	<input type="checkbox" id="togglr" name="togglr" aria-label="Navigation toggle">
+
+	<div class="nav-items">
+		<a href="/"{% if page.url == '/' %} class="active"{% endif %} role="link" aria-label="Homepage">Home</a>
+		<a href="/about"{% if current[1] == 'about' %} class="active"{% endif %} role="link" aria-label="About Me">About Me</a>
+		<a href="/style-guide"{% if current[1] == 'style-guide' %} class="active"{% endif %} role="link" aria-label="About Me">Style Guide</a>
+		<a href="#"{% if current[1] == 'contact' %} class="active"{% endif %} role="link" aria-label="Contact Me">Contact Me</a>
+		<div class="search">
+			<label for="search" class="hidden">Search</label>
+			<input type="text" name="search" id="search" placeholder="Search...">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</div>
+</nav>
+<header class="header" role="banner">
+	<div class="container">
+		<div class="site-title">
+			<a href="/" role="link" aria-label="Homepage">{{ site.title }}</a>
+		</div>
+		<p class="site-tagline">{{ site.description }}</p>
+	</div>
+</header>

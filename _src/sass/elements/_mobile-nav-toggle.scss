@@ -1,0 +1,15 @@
+.togglr{
+	color: #fff;
+	display: none;
+
+	@include bp(small){
+		display: block;
+	}
+	& + input[type="checkbox"]{
+		display: none;
+	}
+
+	& + input[type="checkbox"]:checked + .nav-items{
+		display: block;
+	}
+}

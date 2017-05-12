@@ -1,0 +1,35 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html,body{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background: $body-bg;
+	font-family: $content-font;
+	line-height: 25px;
+	color: $black;
+}
+body{
+	display: flex;
+	flex-direction: column;
+  	min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $header-font;
+	letter-spacing: 3px;
+	line-height: 1;
+}
+.margin-bottom{
+	margin-bottom: 40px;
+}
+.text-center{
+	text-align: center;
+}
+.hidden{
+	display: none !important;
+}
