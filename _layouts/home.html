@@ -36,7 +36,7 @@
 					<span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%m.%d.%Y' }}</time></span>
 					<h2><a href="{{ post.url | relative_url }}" rel="link" aria-label="Read More of {{ post.title }}" alt="Read more of {{ post.title }}">{{ post.title }}</a></h2>
 					<p>{{ post.excerpt }}</p>
-					<a href="{{ post.url }}" class="btn" rel="link" aria-label="Read More of {{ post.title }}" alt="Read more of {{ post.title }}">
+					<a href="{{  post.url | relative_url }}" class="btn" rel="link" aria-label="Read More of {{ post.title }}" alt="Read more of {{ post.title }}">
 						Read More
 						<i class="fa fa-angle-double-right"></i>
 					</a> 
@@ -45,7 +45,7 @@
 				<div class="featured-tag"><div><i class="fa fa-star"></i></div></div>
 				{% endif %}
 				{% if post.featured_image %}
-				<div class="article-image" style="background-image: url({{ post.featured_image | relative_url }}"><a href="{{ post.url }}" rel="link" aria-label="Read More of {{ post.title }}" alt="Read more of {{ post.title }}"></a></div>
+				<div class="article-image" style="background-image: url({{ post.featured_image | relative_url }}"><a href="{{  post.url | relative_url }}" rel="link" aria-label="Read More of {{ post.title }}" alt="Read more of {{ post.title }}"></a></div>
 				{% endif %}
 			</article>
 			<span class="separator margin-bottom"></span>
@@ -54,7 +54,7 @@
 			{% if paginator.pages != 1 %}
 			<div class="pagination margin-bottom{% if !paginator.page == 1 %} first-page{% endif %}" aria-label="Pagination">
 				{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path }}" alt="Previous Page" class="btn icon-left" rel="link" aria-label="Previous Page">
+				<a href="{{ paginator.previous_page_path | relative_url }}" alt="Previous Page" class="btn icon-left" rel="link" aria-label="Previous Page">
 					<i class="fa fa-chevron-left"></i>
 					Previous
 				</a>
@@ -63,7 +63,7 @@
 					Page <span>{{ paginator.page }}</span> out of <span>{{ paginator.total_pages }}</span>
 				</div>
 				{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path }}" alt="Next Page" class="btn" rel="link" aria-label="Next Page">
+				<a href="{{ paginator.next_page_path | relative_url }}" alt="Next Page" class="btn" rel="link" aria-label="Next Page">
 					Next
 					<i class="fa fa-chevron-right"></i>
 				</a>
