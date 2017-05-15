@@ -36,3 +36,8 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+pagination:
+  collection: posts
+  per_page: 5
+  permalink: /page/:num/
+  

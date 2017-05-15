@@ -2,6 +2,11 @@
 	display: flex;
 	padding: 0 20px;
 	margin-bottom: 40px;
+	position: relative;
+
+	.featured-tag{
+		right: 40px;
+	}
 
 	@include bp(small){
 		flex-direction: column-reverse;
@@ -9,6 +14,11 @@
 
 	&.reverse{
 		flex-direction: row-reverse;
+
+		.featured-tag{
+			right: auto;
+			left: 40px;
+		}
 
 		@include bp(small){
 			flex-direction: column-reverse;

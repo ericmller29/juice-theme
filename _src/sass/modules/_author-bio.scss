@@ -1,0 +1,73 @@
+.author-bio{
+	display: block;
+	padding: 20px;
+	background: #f8f8f8;
+	margin-bottom: 40px;
+	display: flex;
+	font-size: 0.8em;
+
+	@include bp(small){
+		flex-direction: column;
+	}
+
+	.author-image{
+		flex: 0 0 150px;
+		height: 150px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 10px;
+		margin-right: 40px;
+
+		@include bp(small){
+			flex: 0 0 100%;
+			background-position: center;
+		}
+	}
+
+	.author-meta{
+		display: flex;
+		flex-direction: column;
+
+
+		@include bp(small){
+			flex: 0 0 100%;
+			margin-top: 40px;
+		}
+
+		h2{
+			margin: 0;
+
+			&:after{
+				display: block;
+				content: '';
+				width: 100px;
+				height: 3px;
+				background: $main-color;
+				margin-top: 10px;
+			}
+		}
+		p{
+			&:after{
+				display: block;
+				content: '';
+				width: 100px;
+				height: 3px;
+				background: $main-color;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.author-social a{
+		font-size: 1.4em;
+		margin-left: 10px;
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		&:after{
+			display: none;
+		}
+	}
+}

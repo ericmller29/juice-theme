@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% include head_meta.html %}
+</head>
+<body>
+	{% include header.html %}
+
+	{% assign author = site.data.authors[page.author] %}
+	<main role="main">
+		<div class="container level">
+			{% if page.featured_image != null %}
+			<div class="featured-image">
+				<span style="background-image: url({{ page.featured_image | relative_url }});"></span>
+			</div>
+			{% endif %}
+			<div class="post-meta">
+				<span class="post-date">{{ page.date | date: '%B %-d, %Y' }}</span>
+				<h1>{{ page.title }}</h1>
+				<div class="author">
+					<span class="author-image" style="background-image: url({{ author.photo | relative_url }})"></span>
+					<span>{{ author.name }}</span>
+				</div>
+			</div>
+			{{content}}
+			<div class="separator margin-bottom"></div>
+			<div class="author-bio">
+				<span class="author-image" style="background-image: url({{ author.photo | relative_url }})"></span>
+				<div class="author-meta">
+					<h2>{{ author.name }}</h2>
+					<p>{{ author.bio }}</p>
+					<nav class="author-social" rel="navigation" aria-label="Follow {{ author.name }}">
+						<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="link" aria-label="Follow {{ site.title}} on twitter!" alt="Follow {{ site.title }} on twitter!"><i class="fa fa-twitter"></i></a>
+						<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="link" aria-label="Find {{ site.title}} on GitHub!" alt="Find {{ site.title }} on GitHub!"><i class="fa fa-github"></i></a>
+						<a href="https://codepen.io/{{ site.codepen_username }}" target="_blank" rel="link" aria-label="Find {{ site.title}} on CodePen!" alt="Find {{ site.title }} on CodePen!"><i class="fa fa-codepen"></i></a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include footer.html %}
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="{{ '/assets/js/vendor.min.js' | relative_url }}"></script>
+	<script type="text/javascript" src="{{ '/assets/js/site.js' | relative_url }}"></script>
+	
+</body>
+</html>

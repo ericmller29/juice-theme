@@ -1,0 +1,49 @@
+.post-meta{
+	display: flex;
+	flex-direction: column;
+
+	h1{
+		margin: 0;
+	}
+
+	.post-date{
+		font-size: 0.8em;
+		font-style: italic;
+		color: $main-color;
+		margin-bottom: 5px;
+		padding-left: 5px;
+	}
+
+	.author{
+		margin-top: 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: middle;
+		font-family: $header-font;
+
+		span{
+			color: $main-color;
+		}
+	}
+
+	.author-image{
+		display: block;
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		border-radius: 50%;
+		border: solid 2px rgba($main-color, 0.3);
+		background-repeat: no-repeat;
+		background-position: top;
+		margin-right: 10px;
+	}
+
+	&:after{
+		display: block;
+		content: '';
+		width: 30%;
+		height: 3px;
+		background: $main-color;
+		margin-top: 10px;
+	}
+}
