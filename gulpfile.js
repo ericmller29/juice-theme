@@ -39,3 +39,4 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['sass', 'vendor', 'scripts', 'images', 'watch']);
+gulp.task('build', ['sass', 'vendor', 'scripts', 'images']);
