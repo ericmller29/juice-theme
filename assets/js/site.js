@@ -1,1 +1,31 @@
-$(function(){"use strict";var i={slick:$("#slick"),level:$(".level")};({init:function(){i.slick.length&&this.initSlider(),i.level.length&&this.fitVideos()},initSlider:function(){i.slick.slick({autoplay:!0,arrows:!1,dots:!0})},fitVideos:function(){i.level.fitVids()}}).init()});
+$(function(){
+	'use strict';
+
+	var $els = {
+		slick: $('#slick'),
+		level: $('.level')
+	},
+	app = {
+		init: function(){
+			if($els.slick.length){
+				this.initSlider();
+			}
+
+			if($els.level.length){
+				this.fitVideos();
+			}
+		},
+		initSlider: function(){
+			$els.slick.slick({
+				autoplay: true,
+				arrows: false,
+				dots: true
+			});
+		},
+		fitVideos: function(){
+			$els.level.fitVids();	
+		}
+	};
+
+	app.init();
+});

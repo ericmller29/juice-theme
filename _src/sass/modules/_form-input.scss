@@ -1,6 +1,31 @@
+.inline-form{
+	display: flex;
+	flex-direction: row;
+
+	.form-input{
+		margin: 0 10px;
+		flex: auto;
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	&.margin-bottom{
+		margin-bottom: 20px;
+	}
+}
 .form-input{
 	position: relative;
 
+	&.margin-bottom{
+		margin-bottom: 20px;
+	}
+	
 	label{
 		font-size: 0.8em;
 		font-weight: bold;
